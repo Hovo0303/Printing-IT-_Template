@@ -1,0 +1,2696 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-size: 100%;
+    z-index: -1;
+    user-select: none;
+}
+.flex_alcenter_jscenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.text_decoration_none{
+    text-decoration: none;
+}
+*{
+    -webkit-user-drag: none;
+}
+img[src="Images/chevron.png"]{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    background: linear-gradient(to right,#672C90,#2C3192);
+    box-shadow: 0 4px 2px #666;
+    cursor: pointer;
+    position: fixed;
+    z-index: 3;
+    right: 2%;
+    bottom: 4%;
+}
+img[src="Images/chevron.png"]:hover{
+    box-shadow: 0px 0px 7px indigo;
+}
+.preloader{
+	position: fixed;
+	top: 0;
+	left:0;
+	right: 0;
+	bottom: 0;
+    background:  #672C90;
+	z-index: 10;
+	background-image: url('Images/gitlogo.png'); 
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25vw auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*
+//________________________________________________________________________________________________________________
+//                                                          HEADER
+//________________________________________________________________________________________________________________
+*/
+.main_header{
+    height: 9.7vw;
+    background: linear-gradient(to right,#672C90,#2C3192);
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+.logo_container{
+    width: 28%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo_container > img{
+    width: 75%;
+    height: 6vw;
+}
+.heading_nav{
+    width: 72%;
+    height: 9.7vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.heading_nav > div{
+    height: 3.5vw;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.carayutyunner{
+    width: 20%;
+    cursor: pointer;
+}
+.carayutyunner:hover{
+    background: #EA405A;
+    animation: background_blur_white 0.7s linear infinite;
+}
+.dasyntacner{
+    width: 18.5%;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.dasyntacner:hover{
+    animation: background_blur_white 0.7s linear infinite;
+    background: #EA405A;
+}
+@keyframes background_blur_white{
+    50%{
+        box-shadow:0 2px 4px white;
+    }
+    100%{
+        box-shadow: none;
+    }
+}
+/* -----------
+    DROP DOWN
+------------*/
+.drop_down{
+    background: linear-gradient(#873FAF,#4B28C4);
+    position: absolute;
+    top: 8vw;
+    right: 30vw;
+    width: 15%;
+    height: 15vw !important;
+    z-index: 3;
+    color: whitesmoke;
+    border:1px solid white;
+    display: none;
+}
+.drop_down_items{
+    width: 100%;
+    height: 33%;
+    font-size: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop_down_items:hover{
+    background: linear-gradient(#4B28C4,#873FAF);
+    color: white;
+}
+.border_white_hover:hover{
+    animation: background_blur_white 0.7s linear infinite;
+    background: #EA405A;
+}
+.search_icon{
+    cursor: pointer;
+}
+#searching_input{
+    width: 20%;
+    height: 2.5vw;
+    position: absolute;
+    right: 40vw;
+    top: 10vw;
+    z-index: 4;
+    color: #4B28C4;
+    display: none;
+    outline: none;
+    border: 2px solid #4B28C4;
+    border-radius: 1vw;
+    padding-left: 2%;
+    font-size: 1.3vw;
+    animation: glow 1s linear infinite;
+}
+@keyframes glow{
+    50%{
+        box-shadow: 0 0 10px white;
+    }
+}
+.language_icon{
+    width: 6vw;
+}
+.language_drop_down{
+    width: 3%;
+    height: 7vw !important;
+    background: #2C3192;
+    position: absolute;
+    right: 2.4vw;
+    top: 6vw;
+    z-index: 3;
+    display: none;
+}
+.language_drop_down_items{
+    height: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language_drop_down_items > img{
+    width: 80%;
+}
+.mobile_menu{
+    display: none;
+}
+.dropping_menu{
+    background: linear-gradient(to left,#672C90,#2C3192);
+    display: none;
+}
+.drop_down_menu{
+    display: none;
+}
+#moving_arrow{
+    margin-left: 1%;
+    width: 5%;
+    transition: transform 1s;
+}
+.drop_down_menu_items{
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4vw;
+    cursor: pointer;
+}
+.drop_down_menu_items:hover{
+    color: orange;
+}
+.drop_down_menu_items:active{
+    color: orange;
+}
+#moving_arrow{
+    margin-left: 1%;
+    width: 5%;
+    transition: transform 1s;
+}
+#searching_input{
+    width: 20%;
+    height: 2.5vw;
+    position: absolute;
+    right: 40vw;
+    top: 10vw;
+    z-index: 4;
+    color: #4B28C4;
+    display: none;
+    outline: none;
+    border: 2px solid #4B28C4;
+    border-radius: 1vw;
+    padding-left: 2%;
+    font-size: 1.3vw;
+    animation: glow 1s linear infinite;
+}
+#logo_uploader{
+    font-size: 1.3vw;
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                               MAIN SECTION
+----------------------------------------------------------------------------------------------------------------
+*/
+
+.main1{
+    height: 60vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+.img_main{
+    width: 100%;
+    height: 24vw;
+}
+.vernagir{
+    font-size: 3.2vw;
+    margin-left: 13.2vw;
+    color: wheat;
+}
+.tvayin_global{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.tvayin_tpagrutyun{
+    font-size: 1.05vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    /* border: 1px solid black; */
+    color: wheat;
+    line-height: 1.7em;
+   }
+
+.patvirel_div1{
+    width: 45%;
+    height: 32vw;
+    border-radius: 1.2vw;
+    position: absolute;
+    background-color: #002F64;
+    top: 1.2vw;
+    left: 28vw;
+    display: none;
+}
+.fa-times{
+    position: absolute;
+    right: 1.5vw;
+    color: white;
+    font-size: 2.4vw;
+    top: 1.2vw;
+    cursor: pointer;
+}
+.logo_img{
+    position: absolute;
+    width: 48%;
+    height: 5.50vw;
+    margin:8% 24%;
+}
+
+/* file_arxiv */
+.chous {
+    width:93%;
+    height: 4vw;
+    border-radius: 0.23vw;
+    text-align: center;
+    margin-top: 10.5vw;
+    margin-left: 1.3vw;
+    cursor: pointer;
+    display: block;
+    font: 1.85vw/4vw Tahoma;
+    transition: all 0.18s ease-in-out;
+    border: 0.25vw solid #2C3192;
+    background: linear-gradient(to top right, #3EC97A, #69EA49 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 0)) top right/500% 500%;
+    color: white;
+    background-color: #EC0CB4;
+}
+.chous:hover {
+    color: white;
+    background-position: bottom left;
+}  
+.my{
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.tipe_number{
+    position: absolute;
+    width: 45%;
+    height: 2.80vw;
+    top: 15.45vw;
+    left: 1.25vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1.1vw;
+    border-radius: 0.25vw;
+}
+.guyn_tpagrutyun{
+    position: absolute;
+    width: 94%;
+    height: 3vw;
+    top: 19vw;
+    left: 1.25vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1.1vw;
+    border-radius: 0.25vw;
+}
+.miakoxmani_tpagrutyun{
+    position: absolute;
+    width: 94%;
+    height: 3vw;
+    top: 22.45vw;
+    left: 1.25vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1.1vw;
+    border-radius: 0.25vw;
+}
+.txti_tpagrutyun{
+    position: absolute;
+    width: 45%;
+    height: 3vw;
+    top: 15.45vw;
+    right:  1.65vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+     padding-left: 1.1vw; 
+    border-radius: 0.25vw;
+}
+.patvirel_inp1{
+    position: absolute;
+    width: 94%;
+    height: 4vw;
+    top: 26vw;
+    left: 1.25vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding-left: 1.1vw;
+    border-radius: 0.25vw;
+    background-color: #EC0CB4;
+    color: white; 
+}
+.patvirel_inp1:hover {
+    color: white;
+    background-color: #69EA49;
+}
+#patvirel_icon_block{
+    width: 13%;
+    height: 2.5vw;
+    margin: 4% 50%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5vw;
+    color: white;
+}
+#patvirel_icon_block:hover{
+    background: none;
+}
+#naxord_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.80% 33%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#naxord_knopka:hover{
+    background: none;
+}
+.main2{
+    height: 55vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#ofset_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+}
+#ofset_knopka:hover{
+    background: none;
+}
+.patvirel_div1{
+    width: 45%;
+    height: 32vw;
+    border-radius: 1.2vw;
+    position: absolute;
+    background-color: #002F64;
+    top: 1.2vw;
+    left: 28vw;
+    display: none;
+}
+.vernagir{
+    font-size: 3.2vw;
+    margin-left: 13.2vw;
+    color: wheat;
+}
+.ofset_global{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.ofset_tpagrutyun{
+    font-size: 1.1vw;
+    margin: 3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main3{
+    height: 80vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#layna_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#layna_knopka:hover{
+    background: none;
+}
+.layn_text1{
+    font-size: 1.08vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 3vw;
+    color: wheat;
+}
+.layn_text2{
+    font-size: 1.13vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.layn_text3{
+    font-size: 1.13vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.layn_text4{
+    font-size: 1.13vw;
+    margin: 3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.layn_text5{
+    font-size: 1.13vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.layn_text6{
+    font-size: 1.13vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.layn_text7{
+    font-size: 1.13vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main4{
+    height: 55vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#plastik_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#plastik_knopka:hover{
+    background: none;
+}
+.layn_plastic{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.layn_mijazgayin{
+    font-size: 1.1vw;
+    margin: 3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main5{
+    height: 90vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#govazd_knopka_hetadarc{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#govazd_knopka_hetadarc:hover{
+    background: none;
+}
+.govazd_global{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.govazd_global_blue{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 2.25vw;
+    color: wheat;
+}
+.govazd_baner{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 8vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.govazd_global_blue1{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 2.25vw;
+    color: wheat;
+}
+.govazd_rol{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 13vw;
+    color: wheat;
+    line-height: 1.5em;
+}
+.govazd_global_blue2{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 2.25vw;
+    color: wheat;
+}
+.govazd_promo{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 8vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main6{
+    height: 58vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#uv_knopka_hetadarc{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#uv_knopka_hetadarc:hover{
+    background: none;
+}
+.uv_global{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 2.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.uv_global_it{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.uv_global_it1{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main7{
+    height: 83vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#artaqin_govazd_knopka_hetadarc{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#artaqin_govazd_knopka_hetadarc:hover{
+    background: none;
+}
+.artaqin_govazd{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 3vw;
+    color: wheat;
+}
+.artaqin_govazd_patrastum{
+    font-size: 1.1vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.artaqin_govazd_irakanacum{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.artaqin_govazd_patrastum1{
+    font-size: 1.1vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 7.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.artaqin_govazd_cucaberel{
+    font-size: 1.1vw;
+    margin: 3% 13%;
+    width: 70%;
+    height: 3.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.artaqin_govazd_masnagetner{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 3.25vw;
+    color: wheat;
+}
+.artaqin_govazd_cankacac_mijavayr{
+    font-size: 1.07vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 3.25vw;
+    color: wheat;
+}
+.artaqin_govazd_global_it{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 3.25vw;
+    color: wheat;
+    line-height: 1.7em;  
+   }
+.main8{
+    height: 52vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#dizayn_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#dizayn_hetadarc_knopka:hover{
+    background: none;
+}
+.dizayn_global{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.6em;
+}
+.dizayn_global_it{
+    font-size: 1.1vw;
+    margin: 1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.6em;
+}
+.main9{
+    height: 54vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+
+#brend_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#brend_hetadarc_knopka:hover{
+    background: none;
+}
+.global_brend{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_apranqanish{
+    font-size: 1.1vw;
+    margin: -2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.global_brending{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main10{
+    height: 52vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+
+#metaqs_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#metaqs_hetadarc_knopka:hover{
+    background: none;
+}
+.global_metaqs{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.5em;
+}
+.global_metaqs_tpagrutyun{
+    font-size: 1.1vw;
+    margin: 3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.main11{
+    height: 50vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#photo_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;  
+}
+#photo_hetadarc_knopka:hover{
+    background: none;
+}
+.global_photo{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_photo_prof{
+    font-size: 1.1vw;
+    margin: -3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main12{
+    height: 50vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#krcqanshani_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;  
+}
+#krcqanshani_hetadarc_knopka:hover{
+    background: none;
+}
+.global_krcqanshan{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_krcqanshan_chaper{
+    font-size: 1.1vw;
+    margin: -3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.main13{
+    height: 57vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#hushanveri_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#hushanveri_hetadarc_knopka:hover{
+    background: none;
+}
+.global_it_hushanver{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_it_hushanver_irakanacum{
+    font-size: 1.1vw;
+    margin: -3% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.5em;
+}
+.global_it_hushanver_gorcum{
+    font-size: 1.1vw;
+    margin: 6% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_it_hushanver_katarum{
+    font-size: 1.1vw;
+    margin: -6% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.main14{
+    height: 54vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+#lazeri_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+     display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white;
+}
+#lazeri_hetadarc_knopka:hover{
+    background: none;
+}
+.global_lazerayin{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.global_lazerayin_hatum{
+    font-size: 1.1vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+}
+.global_lazerayin_hatum_lazerayin{
+    font-size: 1.1vw;
+    margin: -1% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.main15{
+    height: 54vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: none;
+}
+
+#meqenaneri_hetadarc_knopka{
+    width: 13%;
+    height: 2.5vw;
+    margin: -6.70% 32%;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    cursor: pointer; 
+    font-size: 1.5vw;
+    color: white; 
+}
+#meqenaneri_hetadarc_knopka:hover{
+    background: none;
+}
+.global_meqena{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.global_meqena_barcrorak{
+    font-size: 1.1vw;
+    margin: 2% 13%;
+    width: 70%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+
+ /* ------------------------------------------------------
+                      MAIN SECTION
+------------------------------------------------------  */
+
+.main_section{
+    height: 50vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: flex;
+    align-items: center; 
+}
+.question_answer_container{
+    width: 40%;
+    height: 20vw;
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+.first_container{
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+.others{
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    display: none;
+    opacity: 0;
+}
+.question_container{
+    width: 90%;
+    margin: 4% auto;
+    font-size: 2.2vw;
+    text-align: center;
+    margin-top: -10%;
+}
+.question_answer_container_laynakantuxt{
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    display: none;   
+}
+.laynakan_tuxt1{
+    height: 25vw;
+    display: flex;
+    position: relative;  
+}
+.tpagrakan_tesaki_qanak{
+    width: 35%;
+    height: 25vw;
+    position: relative;
+}
+.tpagrakan_tesaki_anvanum{
+    color: white;
+    position: absolute;
+    top: 3.25vw;
+    left: 2vw;
+    font-size: 3.70vw;
+    z-index: 3;
+}
+.klor_slaq{
+    width: 4.25vw;
+    height: 4.25vw;
+    border: 4px solid white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    text-decoration: none;
+    left: 2vw;
+    top: 18vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    cursor: pointer;
+} 
+.klor_slaq:hover{
+    animation: anim 1s linear infinite;
+} 
+ @keyframes anim {
+    50%{
+        box-shadow: 0 0 10px rgb(94, 10, 10);
+        margin-left: 4%;     
+    }
+}
+.fa-angle-right{
+    font-size: 1.75vw;
+} 
+.tesak_tpagrutyan{
+    width: 100%;
+    height: 25vw;
+    opacity: 0.3;
+}
+.laynakan_tuxt2{
+    height: 25vw;
+    display: flex;
+    position: relative;
+}
+.laynakan_tuxt3{
+    height: 6vw;
+    background: rgb(#270A66);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.4vw;
+    color: white; 
+}
+
+/* ------------------------------------------------------
+                      Tpagrutyan carayutyunner
+------------------------------------------------------  */
+.tpagrutyan_carayutyunner{
+    height: 41vw;
+    background: linear-gradient(to right bottom,#13054E,#45108A);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 1;
+}
+.tpagrutyan_carayutyunner_tesak1{
+    height: 12vw;
+    display: flex;
+}
+.vip1{
+    width: 20%;
+    height: 12vw;
+    position: relative;
+}
+.vip1:hover{
+    opacity: 0.7;
+}
+.vip2{
+    width: 20%;
+    height: 12vw;
+    position: relative;
+    display: none;
+} 
+.vip2:hover{
+    opacity: 0.7;
+}
+.tpagrutyun_href{
+    position: absolute;
+    color:white;
+    left: 1.2vw;
+    top: 1.25vw;
+    font-weight: 100%;
+    font-family: inherit;
+    font-size: 1.90vw;
+    font-style: inherit;
+    line-height: 1.5em;
+    outline: 0;
+}
+.tpagrutyun_href:hover{   
+    color: white;   
+}
+.tpagrutyun_icon{
+    position: absolute;
+    width: 3.25vw;
+    height: 3.25vw;
+    border-radius: 50%;
+    border: 0.20vw solid white;
+    top: 8vw;
+    left: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 3;
+    cursor: pointer;
+}
+.print1{
+    width: 100%;
+    height: 12vw; 
+    opacity: 0.2;
+}
+.tpagrutyan_carayutyunner_tesak2{
+    height: 12vw;
+    display: flex;
+    position: relative;
+}
+.tpagrutyan_carayutyunner_tesak3{
+    height: 12vw;
+    display: flex;
+    position: relative;
+}
+.tpagrutyan_carayutyunner_tesak4{
+    height: 8vw;
+    background: rgb(#270A66);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 2.4vw;
+    color: white; 
+    margin-top: 1.1vw;
+}
+
+
+
+/* ------------------------------------------------------
+                     New container
+------------------------------------------------------  */
+
+.new_container{
+    width: 80%;
+    margin: 5% auto;
+    font-size: 1.2vw;
+    color: #aaa; 
+}
+.description_container{
+    width: 80%;
+    margin: 5% auto;
+    font-size: 1.2vw;
+    color: #aaa;
+}
+#kayqi_anvanum{
+    width: 80%;
+    height: 2.6vw;
+    display: block;
+    margin: auto;
+    border-radius: 3vw;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    outline: none;
+    background-color: #45108A;
+    color: white;
+}
+#logo_uploader{
+    width: 37%;
+    margin: 2% auto;
+    background-color: teal;
+}
+.answer_container{
+    width: 30%;
+    height: 2.5vw;
+    margin: 3% auto;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5vw;
+}
+.answer_container:hover{
+    background: none;
+}
+.answer_containe1{
+    width: 30%;
+    height: 2.5vw;
+    margin: 5% auto;
+    border-radius: 2vw;
+    border:0.1vw solid rgb(236, 12, 180);
+    background: rgb(236, 12, 180);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5vw;
+    position: absolute;
+    margin-top: -10%;
+    margin-left:18%;
+}
+.answer_containe1:hover{
+    background: none;
+}
+.anhat_div{
+    width: 38%;
+    height: 15vw;
+    background-color: #553E89;
+    border-radius: 0.25vw;
+    position: absolute;
+    top: 2vw;
+    left: 4vw;  
+    flex-direction: column;
+}
+.anhat_div:focus{
+    border-color: rgb(236, 12, 180);
+    box-shadow: 0 0 8px 0 rgb(236, 12, 180);
+}
+.anhat_img{
+    position: absolute;
+    top: 1.25vw;
+    left: 4.90vw;
+}
+.anhat_text{
+    position: absolute;
+    color: white;
+    font-size: 2vw;
+    top: 9.25vw;
+    left: 4vw;
+}
+.anhat_img1{
+    position: absolute;
+    top: 2.35vw;
+    left: 4.50vw;
+}
+.anhat_text1{
+    position: absolute;
+    top: 10vw;
+    left: 0.55vw;
+    font-size: 1.45vw;
+}
+.anhat_div:hover{
+    border-color: rgb(236, 12, 180);
+    box-shadow: 0 0 8px 0 rgb(236, 12, 180);
+}
+.kazmakerputyun_div{
+    width: 38%;
+    height: 15vw;
+    background-color: #553E89;
+    color: white;
+    position: absolute;
+    top:2vw;
+    left: 21vw; 
+}
+.kazmakerputyun_div:hover{
+    border-color: rgb(236, 12, 180);
+    box-shadow: 0 0 8px 0 rgb(236, 12, 180);
+}
+.font-size{
+    font-size: 1.3vw;
+    margin-top: 1.4vw;
+}
+
+
+
+
+/* ///////////////////////////////////////////////////////
+                            IMAGES
+//////////////////////////////////////////////////////*/
+
+.phone{
+    width: 40%;
+    position: absolute;
+    right: 10%;
+    top:40%;
+    animation: fral 2s linear infinite;
+}
+@keyframes fral{
+    50%{
+        transform: rotate(3deg);
+    }
+}
+.votnak{
+    width: 43%;
+    position: absolute;
+    left: 44%;
+    top:63%;
+    animation: fral 2s linear infinite;
+}
+.phone_img{
+    width: 18%;
+    position: absolute;
+    left: 45%;
+    top:38%;
+    animation: fral 2s linear infinite;
+}
+.kubik_img{
+    width: 13%;
+    position: absolute;
+    left: 50%;
+    top:33%;
+    animation: fral 2s linear infinite;
+}
+.kubik_img1{
+    width: 18%;
+    position: absolute;
+    right:  9%;
+    top:38%;
+    animation: fral 2s linear infinite;
+}
+.kubik_img2{
+    width: 13%;
+    position: absolute;
+    right:  14%;
+    top:33%;
+    animation: fral 2s linear infinite;
+}
+.printpuchur_img{
+    width: 6%;
+    position: absolute;
+    right:  18%;
+    top:28%;
+    animation: fral 2s linear infinite;
+}
+.printpuchur-img{
+    width: 6%;
+    position: absolute;
+    left: 54%;
+    top:28%;
+    animation: fral 2s linear infinite;
+}
+.girl_img{
+    width: 9%;
+    position: absolute;
+    left: 63%;
+    top:28%;
+    animation: fral 2s linear infinite;
+}
+.truba_karmir{
+    width: 18%;
+    position: absolute;
+    left: 40%;
+    top:43%;
+    animation: fral 2s linear infinite;
+   
+}
+.truba_rozvi{
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    top:41%;
+    animation: fral 2s linear infinite;
+}
+.printer{
+    width: 33%;
+    position: absolute;
+    left: 50%;
+    top:43%;
+    animation: fral 2s linear infinite;
+}
+.printertext{
+    width: 13%;
+    position: absolute;
+    right: 28%;
+    top:65%;
+    animation: fral 2s linear infinite;
+}
+.printer_text{
+    width: 18%;
+    position: absolute;
+    right: 25%;
+    top:60%;
+    animation: fral 2s linear infinite;
+}
+.marduk{
+    width: 10%;
+    position: absolute;
+    left: 46%;
+    top:48%;
+    animation: fral 2s linear infinite;
+}
+.axchik{
+    width: 9%;
+    position: absolute;
+    right:  16%;
+    top:46%;
+    animation: fral 2s linear infinite;
+}
+.trubadexin{
+    width: 13%;
+    position: absolute;
+    right:8%;
+    top:60%;
+    animation: fral 2s linear infinite;
+}
+.trubakarmir{
+    width: 13%;
+    position: absolute;
+    right:8%;
+    top:56%;
+    animation: fral 2s linear infinite;
+}
+.phone_interface{
+    width: 25%;
+    position: absolute;
+    right: 13%;
+    top:40%;
+    animation: fral 2s linear infinite;
+}
+.chat_box{
+    width: 22%;
+    position: absolute;
+    right: 28%;
+    top:54%;
+    animation: go_up 4s linear infinite;
+    animation-delay: 1s;
+}
+.search_box{
+    width: 15%;
+    position: absolute;
+    right: 18%;
+    top:40%;
+    animation: go_up 4s linear infinite;
+    animation-delay: 0.5s;
+}
+.login_img{
+    width: 20%;
+    position: absolute;
+    right: 22%;
+    top:41%;
+    animation: go_up 4s linear infinite;
+    animation-delay: 0.7s;
+}
+.asteriks{
+    width: 5%;
+    position: absolute;
+    right: 36.5%;
+    top:42%;
+    animation: go_up 4s linear infinite;
+    animation-delay: 0.7s;
+}
+.outline{
+    width: 30%;
+    position: absolute;
+    right: 11%;
+    top:25%;
+    animation: go_up 4s linear infinite;
+}
+.logo{
+    width: 10%;
+    position: absolute;
+    right: 20%;
+    top: 35%;
+    animation: go_up 4s linear infinite;
+}
+@keyframes go_up{
+    50%{
+        margin-top: -2%;
+    }
+}
+
+/*
+----------------------------------------------------------------------------------------------------------------
+                                                            FOOTER 
+----------------------------------------------------------------------------------------------------------------
+*/
+
+footer{
+    height: 60vw;
+    background: linear-gradient(#A34CE9,#672C90);
+    opacity: 0.95;
+    position: relative;
+}
+.social_media_section{
+    width: 43%;
+    height: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    float: left;
+}
+.social_media_section > img{
+    width: 50%;
+    margin-left: -15%;
+}
+.about_article{
+    width: 63%;
+    height: 17vw;
+    color: #BFA8D2;
+    line-height: 2em;
+    text-align: start;
+    font-size: 1.1vw;
+}
+.social_media_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    height: 10%;
+    margin-left: -17%;
+}
+.social_link_container{
+    width: 22%;
+    height: 100%;
+    background: #8565E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.social_link_container:hover{
+    opacity: 0.5;
+}
+.social_link_container  img{
+    width: 1.5vw;
+}
+.whole_navigaion_section{
+    width: 57%;
+    height: 45vw;
+    float: left;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+}
+.navigation_columns{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.3vw;
+    color: #BFA8D2;
+}
+.navigation_through_site_heading{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    font-size: 1.8vw;
+    color: white;
+}
+.navigation_columns a{
+    text-decoration: none;
+    color: #BFA8D2;
+}
+.navigation_columns a:hover{
+    color: orange;
+}
+.footer{
+    width: 100%;
+    height: 13vw;
+    background: linear-gradient(#672C90,#2C3192);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    text-align: center;
+}
+
+.copyright{
+    width: 90%;
+    color: #BFA8D2;
+    line-height: 2em;
+    font-size: 1.3vw;
+    margin: auto;
+    margin-top: 2%;
+
+}
+.copyright > p{
+    margin: 0;
+    color: orange;
+    display: inline;
+}
+
+
+@media only screen and (max-width:600px){
+    .desktop_with_brain{
+        display: none;
+    }
+    .main_section{
+        justify-content: center;
+        height: 70vw;
+    }
+    .question_answer_container{
+        width: 90%;
+        height: 90%;
+        left: 7%;
+        top: 14%;
+    }
+    .question_container{
+        font-size: 6vw;
+    }
+    .description_container{
+        font-size: 3vw;
+    }
+    .answer_container{
+        width: 40%;
+        height: 5vw;
+        border-radius: 5vw;
+        font-size: 2.5vw;
+        padding: 1% 0;
+    }
+    .home_section{
+        height: 90vw;
+    }
+    .main_header{
+        height: 15vw;
+        justify-content: center;
+    }
+    .hiding_nav,
+    img[src="Images/shisteryonka.png"],
+    .zangaharel_btn,
+    img[src="Images/idea.png"],
+    img[src="Images/red_circle.png"],
+    img[src="Images/play_button.png"],
+    .question_mark
+    {
+        display: none;
+    }
+    .search_icon{
+        width: 20%;
+    }
+    .logo_container{
+        height: 100%;
+        width: 40%;
+    }
+    .heading_nav{
+        width: 30%;
+    }
+    .logo_container > img{
+        width: 100%;
+        height: auto;
+    }
+    .mobile_menu{
+        display: block;
+        width: 8%;
+    }
+    #searching_input{
+        position: static;
+        width: 100%;
+        height: 10vw;
+        color: #4B28C4;
+        outline: none;
+        border: 2px solid #4B28C4;
+        padding-left: 3%;
+        font-size: 3vw;
+        animation: glow 1s linear infinite;
+        display: block;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .montage_area_img{
+        display: none;
+    }
+    .krtutyun_praktika_ashxatanq_container{
+        width: 60%;
+        height: 65vw;
+        font-size: 9vw;
+    }
+    .stanal_krtutyun{
+        font-size: 3vw;
+    }
+    .education_types{
+        height: 8vw;
+        font-size: 3.5vw;
+    }
+    .naxord_container{
+        width: 40%;
+        height: 5vw;
+        border-radius: 5vw;
+        font-size: 2.5vw;
+        padding: 1% 0;
+    }
+    #dvd{
+        display: none;
+    }
+    .question_container{
+        width: 100%;
+        font-size: 5vw !important;
+    }
+    #kayqi_anvanum{
+        height: 5vw;
+    }
+    .font-size{
+        font-size: 3vw;
+    }
+    .description_container{
+        font-size: 2.2vw;
+    }
+    .new_container{
+        font-size: 2.2vw;
+    }
+    #logo_uploader{
+        font-size: 2vw;
+    }
+    .anhat_div{
+        width: 33%;
+        height: 20vw;
+        background-color: #553E89;
+        border-radius: 0.25vw;
+        position: absolute;
+        top: 4.25vw;
+        left: 10vw;  
+        flex-direction: column;
+    }
+    .anhat_img{  
+        top: 1.25vw;
+        left: 9.50vw;
+    } 
+    .anhat_text{
+        position: absolute;
+        color: white;
+        font-size: 3vw;
+        top: 12.25vw;
+        left: 9.25vw;
+    }
+    .anhat_img1{
+        position: absolute;
+        top: 2.35vw;
+        left: 8.40vw;
+    }
+    .anhat_text1{
+        position: absolute;
+        top: 12vw;
+        left: 0.55vw;
+        font-size: 2.80vw;
+    }
+    .kazmakerputyun_div{
+        width: 33%;
+        height: 20vw;
+        color: white;
+        position: absolute;
+        top:4.25vw;
+        left: 45vw; 
+    }
+    .answer_containe1{
+        width: 25%;
+        height: 4.5vw;
+        border-radius: 2vw;
+        cursor: pointer;
+        font-size: 2.25vw;
+        position: absolute;
+        top: 35.1vw;
+        left: 1.25vw;
+    }
+    #hajord_knopken{
+        width: 25%;
+        height: 3vw;
+        border-radius: 2vw;
+        margin-top: 33%!important;
+        cursor: pointer;
+        font-size: 2.25vw;
+    }
+/* 
+            laynatuxttttttttttt */
+
+    .question_answer_container_laynakantuxt{
+        width: 100%;
+        height: 94vw;
+        position: relative;  
+    }
+    .laynakan_tuxt1{
+        width: 45%;
+        height: auto;
+        flex-direction: column;
+        left: 3%;
+        top: 0.20vw;
+    }
+    .tpagrakan_tesaki_qanak{
+        width: 100%;
+        height: 25.25vw;
+        margin-top: 3.1vw;
+    }
+    .laynakan_tuxt2{
+        width: 45%;
+        height: auto;
+        position: absolute;
+        flex-direction: column;
+        top: 0.20vw;
+        right: 3%;
+    }
+    .laynakan_tuxt3{
+        text-align: center;
+        font-size: 3.6vw;
+        margin-top: 1.5vw;
+    }
+    .tpagrutyan_carayutyunner{
+        width: 100%;
+        height: auto;
+        position: relative;
+        justify-content: space-between!important;
+    }
+    .tpagrutyun_href{
+        right: 20vw;
+        font-size: 2.68vw;
+        top: 18%;
+        cursor: pointer;
+    }
+    .tpagrutyun_icon{
+        width: 5.35vw;
+        height: 5.35vw; 
+        top: 18vw;
+    }
+    .tpagrutyan_carayutyunner_tesak1{
+        width: 49%;
+        height: auto;
+        flex-direction: column;
+        position: relative;
+        left: 0.55vw;
+    }
+    .tpagrutyan_carayutyunner_tesak2{
+        width: 49%;
+        height: auto;
+        flex-direction: column;
+        top: 0.25vw;
+        right: 0.25vw;
+        position: absolute;
+    }
+    .tpagrutyan_carayutyunner_tesak3{
+        width: 45%;
+        height: auto;
+        display: none; 
+    }
+    .tpagrutyan_carayutyunner_tesak4>span{
+        text-align: center;
+        font-size: 3.6vw;
+        margin-top: 1.5vw;
+    }
+    .vip1{
+        width: 100%;
+        height: 25.25vw;
+        position: relative;
+        margin-top: 1vw;
+    }
+    .vip2{
+        width: 100%;
+        height: 25.25vw;
+        position: relative;
+        display: block;
+        margin-top: 1vw;
+    } 
+    .print1{
+        width: 100%;
+        height: 25.25vw;
+    }
+
+ /* ------------------------------------------------------
+                     Main1 ԹՎԱՅԻՆ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+
+.main1{
+    height: 60vw;  
+}
+    .patvirel{
+        width: 60%;
+        height: 43vw;
+    }
+    .patvirel_div1{
+        width: 60%;
+        height: 43vw;
+    }
+    .fa-times{
+        right: 1.5vw;
+        color: white;
+        font-size: 3.2vw;
+        top:1.35vw;
+        cursor: pointer;
+    }
+    .logo_img{
+        width: 60%;
+        height: 7vw;
+        margin:10% 18%;
+    }
+/* file_arxiv */
+    .chous {
+        width: 94%;
+        height: 6vw;
+        margin-top: 13.25vw;
+        margin-left: 1vw;
+        font: 2.25vw/5vw Tahoma;
+    }
+    .tipe_number{
+        width: 45%;
+        height: 4.40vw;
+        font-size: 2.25vw;
+        top: 20vw;
+        border-radius:0.25vw!important;
+    }
+    .guyn_tpagrutyun{
+        width: 94%;
+        height: 2.25vw;
+        font-size: 2vw;
+        display: block;
+        margin-top: 6.4vw;
+        height: 4.25vw;
+    }
+    .miakoxmani_tpagrutyun{
+        width: 94;
+        font-size: 2.25vw;
+        height: 4.25vw;
+        display: block;
+        margin-top: 7.88vw;
+    }
+    .txti_tpagrutyun{
+        width: 45%;
+        height: 4.50vw;
+        top: 20vw;
+        font-size: 2.25vw;
+        display: block;
+        right: 2.25vw;
+    }
+    .patvirel_inp1{
+        width: 94%;
+        height: 5.45vw;
+        display:block;
+        margin-top: 9.2vw;
+        font-size: 2.45vw;
+    }
+
+    .tvayin_global{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 5.25vw;
+    }
+    .tvayin_tpagrutyun{
+        font-size: 1.68vw;
+        margin: 3% 13%;
+        width: 80%;
+        height: 4.25vw;
+    }
+    #patvirel_icon_block{
+        margin: 8% 50%;
+    }
+    #naxord_knopka{
+        margin: -9.70% 33%;
+    }
+
+/* ------------------------------------------------------
+                     Main2  ՕՖՍԵԹ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main2{
+    height: 67vw;
+}
+    .ofset_global{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 5.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .ofset_tpagrutyun{
+        font-size: 1.68vw;
+        margin: 6% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .ovset_patvirel{
+        margin: 10.70% 51%!important;
+    }
+    #ofset_knopka{
+        margin: -13.25% 30%!important;
+    }
+    /* ------------------------------------------------------
+                     Main3 ԼԱՅՆԱՖՈՐՄԱՏ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main3{
+    height: 113vw;
+}
+    .layn_text1{
+        font-size: 1.68vw;
+        margin: 1% 13%;
+        width: 80%;
+        height: 3vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_text2{
+        font-size: 1.68vw;
+        margin: 4% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+    }
+    .layn_text3{
+        font-size: 1.68vw;
+        margin: -3% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_text4{
+        font-size: 1.68vw;
+        margin: 6% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_text5{
+        font-size: 1.68vw;
+        margin: 10% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_text6{
+        font-size: 1.68vw;
+        margin: -6% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_text7{
+        font-size: 1.68vw;
+        margin: 13% 13%;
+        width:80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    #layna_knopka{
+        margin: -9.70% 33%;
+    }
+    /* ------------------------------------------------------
+                     Main4 ՊԼԱՍՏԻԿ ՔԱՐՏԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main4{
+    height: 67vw;
+}
+    .layn_plastic{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .layn_mijazgayin{
+        font-size: 1.68vw;
+        margin: 10% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    #plastik_knopka{
+        margin: -9.88% 32%!important; 
+    }
+/* ------------------------------------------------------
+                     Main5 ԳՈՎԱԶԴԱՅԻՆ ՍՏԵՆԴՆԵՐ
+------------------------------------------------------  */
+.main5{
+    height: 135vw;
+}
+    .govazd_global{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 4.25vw;
+    }
+    .govazd_global_blue{
+        font-size: 1.68vw;
+        margin: 6% 13%;
+        width: 80%;
+        height: 2.25vw; 
+    }
+    .govazd_baner{
+        font-size: 1.68vw;
+        margin: -3% 13%;
+        width: 80%;
+        height: 8vw;
+    }
+    .govazd_global_blue1{
+        font-size: 1.68vw;
+        margin: 14% 13%;
+        width: 80%;
+        height: 2.25vw;
+    }
+    .govazd_rol{
+        font-size: 1.68vw;
+        margin: -11% 13%;
+        width: 80%;
+        height: 13vw;
+    }
+    .govazd_global_blue2{
+        font-size: 1.68vw;
+        margin: 28% 13%;
+        width: 80%;
+        height: 2.25vw;
+    }
+    .govazd_promo{
+        font-size: 1.68vw;
+        margin: -26% 13%;
+        width: 80%;
+        height: 8vw;
+    }
+    #govazd_knopka_hetadarc{
+        margin:-38.15% 32%!important; 
+    }
+    .patv_div{
+        margin:35.60% 52%!important; 
+    }
+    
+    /* ------------------------------------------------------
+                     Main6 UV ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main6{
+    height: 73vw;
+}
+.uv_global{
+    font-size: 1.68vw;
+    margin: 4% 13%;
+    width: 80%;
+}
+.uv_global_it{
+    font-size: 1.68vw;
+    margin: 6% 13%;
+    width: 80%;
+}
+.uv_global_it1{
+    font-size: 1.68vw;
+    margin: 7% 13%;
+    width: 80%;
+}
+#uv_knopka_hetadarc{
+    margin: -9.70% 32%; 
+}
+
+/* ------------------------------------------------------
+                     Main7 ԱՐՏԱՔԻՆ ԳՈՎԱԶԴ
+------------------------------------------------------  */
+.main7{
+    height: 120vw;
+    
+}
+    .artaqin_govazd{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+    }
+    .artaqin_govazd_patrastum{
+        font-size: 1.68vw;
+        margin: 1% 13%;
+        width: 80%;
+    }
+    .artaqin_govazd_irakanacum{
+        font-size: 1.68vw;
+        margin: 8% 13%;
+        width: 80%; 
+    }
+    .artaqin_govazd_patrastum1{
+        font-size: 1.68vw;
+        margin: -2% 13%;
+        width: 80%; 
+    }
+    .artaqin_govazd_cucaberel{
+        font-size: 1.68vw;
+        margin: 14% 13%;
+        width: 80%;
+    }
+    .artaqin_govazd_masnagetner{
+        font-size: 1.68vw;
+        margin: -9% 13%;
+        width: 80%; 
+    }
+    .artaqin_govazd_cankacac_mijavayr{
+        font-size: 1.68vw;
+        margin: 12% 13%;
+        width: 80%;
+    }
+    .artaqin_govazd_global_it{
+        font-size: 1.68vw;
+        margin: -8% 13%;
+        width: 80%;
+    }
+    .artaqin_govazd_patvirel{
+       margin-top: 15.2vw!important;
+    }
+   
+    #artaqin_govazd_knopka_hetadarc{
+        margin: -9.70% 32%!important;  
+    }
+    /* ------------------------------------------------------
+                     Main8  ԴԻԶԱՅՆ
+------------------------------------------------------  */
+.main8{
+    height: 65vw; 
+}
+    .dizayn_global{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%; 
+    }
+    .dizayn_global_it{
+        font-size: 1.68vw;
+        margin: 6% 13%;
+        width: 80%;
+    }
+    #dizayn_hetadarc_knopka{
+        margin: -9.10% 32%; 
+    }
+   
+    /* ------------------------------------------------------
+                     Main9 ԲՐԵՆԴԻՆԳ
+------------------------------------------------------  */
+.main9{
+    height: 63vw;
+}
+    .global_brend{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;    
+    }
+   .global_apranqanish{
+       font-size: 1.68vw;
+       margin: -2% 13%;
+       width: 80%;
+       height: 4.25vw;
+       color: wheat;
+   }
+   .global_brending{
+       font-size: 1.68vw;
+       margin: 5% 13%;
+       width: 80%; 
+   }
+   #brend_hetadarc_knopka{
+    margin: -9.80% 32%;
+   }
+   /* ------------------------------------------------------
+                     Main10 ՄԵՏԱՔՍՅԱ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main10{
+    height: 67vw;
+}
+   .global_metaqs{
+    font-size: 1.68vw;
+    margin: 2% 13%;
+    width: 80%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+.global_metaqs_tpagrutyun{
+    font-size: 1.68vw;
+    margin: 10% 13%;
+    width: 80%;
+    height: 4.25vw;
+    color: wheat;
+    line-height: 1.7em;
+}
+    #metaqs_hetadarc_knopka{ 
+        margin: -9.50% 32%; 
+    }
+    /* ------------------------------------------------------
+                     Main11    ՖՈՏՈ
+------------------------------------------------------  */
+.main11{
+    height: 54vw;
+}
+    .global_photo{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%; 
+    }
+    .global_photo_prof{
+        font-size: 1.68vw;
+        margin: -2% 13%;
+        width: 80%;
+        line-height: 1.7em;
+    }
+      #patvirel_icon_block{
+        width: 13%;
+        height: 2.5vw;
+        margin: 7% 50%; 
+    }
+    #photo_hetadarc_knopka{
+        margin: -9.90% 32%;  
+    }
+    /* ------------------------------------------------------
+                     Main12 ԿՐԾՔԱՆՇԱՆՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main12{
+     height: 50vw;
+}
+    .global_krcqanshan{
+        font-size: 1.68vw;
+        margin: 4% 13%;
+        width: 80%;
+    }
+    .global_krcqanshan_chaper{
+        font-size: 1.68vw;
+        margin: -5% 13%;
+        width: 80%;
+    }
+   
+    #krcqanshani_hetadarc_knopka{
+        margin: -9.70% 32%;   
+    }
+    /* ------------------------------------------------------
+                     Main13 ՀՈՒՇԱՆՎԵՐՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+------------------------------------------------------  */
+.main13{
+    height: 70vw;
+  
+}
+    .global_it_hushanver{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+    }
+    .global_it_hushanver_irakanacum{
+        font-size: 1.68vw;
+        margin: -2% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .global_it_hushanver_gorcum{
+        font-size: 1.68vw;
+        margin: 9% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+    }
+    .global_it_hushanver_katarum{
+        font-size: 1.68vw;
+        margin: -9% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+   
+    #hushanveri_hetadarc_knopka{
+        margin: -17.95% 32%;  
+    }
+    .hush_inp{
+        margin: 15.60% 52%!important;  
+    }
+    /* ------------------------------------------------------
+                     Main14 ԼԱԶԵՐԱՅԻՆ ՀԱՏՈՒՄ
+------------------------------------------------------  */
+.main14{
+    height: 67vw;
+}
+    .global_lazerayin{
+        font-size: 1.68vw;
+        margin: 4% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .global_lazerayin_hatum{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    .global_lazerayin_hatum_lazerayin{
+        font-size: 1.68vw;
+        margin: 4% 13%;
+        width: 80%;
+        height: 4.25vw;
+        color: wheat;
+        line-height: 1.7em;
+    }
+    #lazeri_hetadarc_knopka{
+        margin: -9.95% 32%;  
+    }
+    /* ------------------------------------------------------
+                     Main15  ՄԵՔԵՆԱՆԵՐԻ ՁԵՒԱՎՈՐՈՒՄ
+------------------------------------------------------  */
+.main15{
+    height: 62vw;
+}
+    .global_meqena{
+        font-size: 1.68vw;
+        margin: 2% 13%;
+        width:80%;
+    }
+    .global_meqena_barcrorak{
+        font-size: 1.68vw;
+        margin: 6% 13%;
+        width: 80%;
+    }
+    #patvirel_icon_block14{
+        margin: 8% 50%;
+    }
+    #meqenaneri_hetadarc_knopka{
+        margin: -10.73% 32%;  
+    }
+
+
+footer{
+    height: 380vw;
+}
+    .social_media_section{
+        float: none;
+        width: 90%;
+        margin: auto;
+        height: 80vw;
+    }
+    .social_media_section > img{
+        margin-left: -10%;
+        width: 60%;
+    }
+    .about_article{
+        font-size: 2.5vw;
+        text-align: center;
+        height: 45vw;
+    }
+    .footer{
+        height: 20vw;
+    }
+    .copyright{
+        font-size: 1.7vw;
+    }
+    .social_media_container{
+        margin: 0;
+        width: 60%;
+        height: 10vw;
+    }
+    .social_link_container{
+        height: 100%;
+
+    }
+    .social_link_container > a{
+        text-align: center;
+    }
+    .social_link_container img{
+        width: 80%;
+    }
+    .whole_navigaion_section{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 5% 0;
+    }      
+    .navigation_through_site_heading{
+        font-size: 7vw;
+        justify-content: center;
+    }
+    .navigation_columns{
+        width: 100% !important;
+        height: 120vw !important;
+        text-align: center;
+        font-size: 4.5vw;
+        line-height: 2em;
+    }
+    .scroll_to_top{
+        width: 12vw !important;
+        height: 12vw !important;
+    }
+   .flex_alcenter_jscenter .hiding_searching_inputnav .border_white_hover{
+       display: none;
+   }
+}

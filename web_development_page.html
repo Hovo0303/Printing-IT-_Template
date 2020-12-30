@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="web_development_page.css">
+</head>
+<body>
+
+
+<!-- //------------------------------------------------------
+//                   PRELOADER AND SCROLL.TO.TOP
+//------------------------------------------------------ -->
+<img src="Images/chevron.png" class="scroll_to_top" alt="Up Arrow">
+
+<!-- //------------------------------------------------------
+//                      HEADER
+//------------------------------------------------------ -->
+
+<header class="main_header">
+    <div class="logo_container"><img src="Images/mini-logo.png" alt="Logo"></div>
+    <nav class="heading_nav">
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 15%;"><a href="../index.html">Գլխավոր</a></div>
+        <div class="flex_alcenter_jscenter hiding_nav carayutyunner">Ծառայություններ</div>
+        <div class="flex_alcenter_jscenter hiding_nav dasyntacner">
+            Դասընթացներ
+            <img class="drop_down_arrow" src="Images/down_arrow.png" alt="Down arrow" width="10%">
+        </div>
+        <!--
+            DROPDOWN
+        -->
+        <div class="drop_down">
+            <a href="../ndex3.html"><div class="drop_down_items">Ծրագրավորում</div></a>
+            <a href="../ndex3.html"><div class="drop_down_items">Մուլտիմեդիա</div></a>            
+            <a href="../ndex3.html"><div class="drop_down_items">Վիդեոմոնտաժ</div></a>        
+        </div>
+
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Աշխատանք</div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover">Թեստեր</div>
+        <div class="flex_alcenter_jscenter hiding_nav border_white_hover" style="width: 7%;">Կապ</div>
+        <img  src="Images/search_icon.png" alt="Search Icon" width="3%" class="search_icon">
+        <div class="flex_alcenter_jscenter hiding_nav language_icon">
+            <img src="Images/arm.png" alt="Arm" height="70%" class="current_language">
+            <img src="Images/down_arrow.png" alt="down_arrow" width="20%">
+        </div>
+        <!-- Languages Drop Down-->
+        <div class="language_drop_down">  
+            <div class="language_drop_down_items">
+                <img src="Images/arm.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="Images/rus.png" alt="" onclick="changing_language(this)">
+            </div>
+            <div class="language_drop_down_items">
+                <img src="Images/eng.png" alt="" onclick="changing_language(this)">
+
+            </div>
+        </div>
+    </nav>
+    <img src="Images/menu_icon.png" alt="Menu Icon" class="mobile_menu">
+</header>
+
+<!--  SEARCH INPUT  -->
+ <input type="text" name="search" id="searching_input" placeholder="Looking for something?" > 
+
+<!-- //------------------------------------------------------
+//                      DROPING MENU
+//------------------------------------------------------ -->
+
+<div class="dropping_menu">
+    <a href="index.html"><div class="drop_down_menu_items">Գլխավոր</div></a>
+    <a href=""><div class="drop_down_menu_items">Ծառայություններ</div></a>
+    <div class="drop_down_menu_items dasyntacner_drop_menu">Դասընթացներ
+        <img src="Images/down_arrow.png" alt="" id="moving_arrow">
+    </div>
+
+    <!-- Drop Down Menu Dasyntacner -->
+
+    <div class="drop_down_menu">
+        <a href="../Classes Page/index3.html"><div class="drop_down_menu_items">Ծրագրավորում</div></a>
+        <a href="../Classes Page/index3.html"><div class="drop_down_menu_items">Մուլտիմեդիա</div></a>            
+        <a href="../Classes Page/index3.html"><div class="drop_down_menu_items">Վիդեոմոնտաժ</div></a>        
+    </div>
+
+    <a href=""><div class="drop_down_menu_items">Աշխատանք</div></a>
+    <a href=""><div class="drop_down_menu_items">Թեստեր</div></a>
+    <a href=""><div class="drop_down_menu_items">Կապ</div></a>
+</div>
+
+<!-- //------------------------------------------------------
+//                      MAIN SECTION
+//------------------------------------------------------ -->
+
+<!-- //------------------------------------------------------
+//                      ԹՎԱՅԻՆ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main1" title="tit3">
+  <img class="img_main" src="./line_print/line_img1.Png" >
+  <h1 class="vernagir">ԹՎԱՅԻՆ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="tvayin_global">PRINTING IT-ը թվային (դիջիթլ) տպագրության միջոցով իրականացնում է փոքրաքանակ տպագրական պատվերներ հենց տեղում՝ շատ կարճ ժամանակահատվածում:</div>
+  <div class="tvayin_tpagrutyun">Տպագրության այս տեսակով կարելի է տպագրել թռուցիկներ, բուկլետներ, ֆլայերներ, կատալոգներ, ծրարներ, բացիկներ, հրավիրատոմսեր, այցեքարտեր, բեյջեր, հավաստագրեր, վկայագրեր, թղթապանակներ, գրքույկներ, պատի և սեղանի օրացույցներ և այլն:</div>
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+  <div class="" id="naxord_knopka" >Նախորդ</div>
+ 
+<!-- //------------------------------------------------------
+//                     patvirelu div_knopka
+//------------------------------------------------------ -->
+  
+  <div id="patvirel_none"  class="patvirel_div1">
+  <i id="patvirel_block" class="fas fa-times"></i>
+  <img class="logo_img" src="./line_print/mini-logo.png">
+  
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+  
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100">
+    <select class="guyn_tpagrutyun">
+      <option class="gunavor_text" value="Գունավոր">Գունավոր </option>
+      <option value="Անգույն">Անգույն</option>
+    </select>
+    <select class="miakoxmani_tpagrutyun">
+      <option value="Միակողմանի">Միակողմանի</option>
+      <option value="Երկողմանի">Երկողմանի </option>
+    </select>
+    <select class="txti_tpagrutyun">
+      <option value="Թուղթ"> Թուղթ</option>
+      <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+      <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+      <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+      <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+      <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ)</option>
+      <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+      <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+      <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+    </select>
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+ </div>   
+</section>
+<!-- //------------------------------------------------------
+//                     ՕՖՍԵԹ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main2">
+  <img class="img_main" src="./line_print/line_img1.Png" >
+  <h1 class="vernagir">ՕՖՍԵԹ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="ofset_global"> <span >Օֆսեթ տպագրությամբ իրականացվում են մեծաքանակ տպագրական աշխատանքներ:
+    Մենք օգտագործում ենք բարձրորակ ներկեր և նորագույն տեխնոլոգիաներ, ինչն ապահովում է որակի մրցունակ չափանիշ, թույլ է տալիս ստանալ առավելագույնս բնական և հագեցած գույներ:</span>
+  </div>
+  <div class="ofset_tpagrutyun">Տպագրության այս տեսակով PRINTING IT-ում կարելի է տպագրել թռուցիկներ, բուկլետներ, ֆլայերներ, կատալոգներ, ծրարներ, բացիկներ, հրավիրատոմսեր, այցեքարտեր, բեյջեր, հավաստագրեր, վկայագրեր, թղթապանակներ, պատի և սեղանի օրացույցներ, պիտակներ, պաստառներ, գրքույկներ, գրքեր, ամսագրեր, թերթեր, տուփեր և թղթե տոպրակներ և այլն: </div>
+  <div id="patvirel_icon_block" class="ovset_patvirel" title="tit1" >Պատվիրել</div>
+   <div id="ofset_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1"> 
+    <i id="patvirel_block" title="tit2" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+
+    <div class="dada">
+      <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+      <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+    </div>
+      <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+    <select class="guyn_tpagrutyun">
+      <option value="Գունավոր">Գունավոր </option>
+      <option value="Անգույն">Անգույն</option>
+    </select> 
+    <select class="miakoxmani_tpagrutyun">
+      <option value="Միակողմանի">Միակողմանի</option>
+      <option value="Երկողմանի">Երկողմանի </option>
+    </select> 
+    <select class="txti_tpagrutyun">
+      <option value="Թուղթ"> Թուղթ</option>
+      <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+      <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+      <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+      <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+      <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+      <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+      <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+      <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+    </select> 
+      <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+    </div>
+</section>
+<!-- //------------------------------------------------------
+//                     ԼԱՅՆԱՖՈՐՄԱՏ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main3" >
+  <img class="img_main" src="./line_print/laynaformat1.jpg" >
+  <h1 class="vernagir">ԼԱՅՆԱՖՈՐՄԱՏ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="layn_text1"> <span >Լայնաֆորմատ տպագրությունը մեծ կիրառություն ունի հատկապես արտաքին գովազդի, ինտերիերի կամ մեքենայի ձևավորման մեջ:</span></div>
+  <div class="layn_text2">PRINTING IT-ն իրականացնում է լայնաֆորմատ տպագրություն հենց տեղում: </div>
+  <div class="layn_text3">Մեծ վահանակները, ցուցանակները, բաններները, լայթբոքսերը, շինությունների պատերի արտաքին հատվածի մեծ չափսի պաստառները տպագրվում են հենց այս եղանակով: </div>
+  <div class="layn_text4">Մենք օգտագործում ենք նոր սերդնի սարքավորումներ և տեխնոլոգիաներ, ինչի շնորհիվ պատկերը և տեքստը մաքսիմալ պարզ է, բարձր կետայնությամբ, տպագրությունը ոչ մի դեպքում չի գունաթափվում արևի ճառագայթներից կամ անձրևից, դիմանում է եղանակային տարբեր փոփոխություններին: </div>
+  <div class="layn_text5">Մեր նորագույն UV սարքավորումով ֆոտոտպագրությունը կտավի վրա ստեղծում է այնպիսի տպավորություն, կարծես թե այն յուղաներկով է նկարված: </div>
+  <div class="layn_text6">Օֆիսային տարածքների կամ առևտրային կենտրոնների ապակիների, վիտրաժների, փայտե տուփերի կամ իրերի, պվք-ի վրա տպագրությունը ևս իրականացվում են լայնաֆորմատ տպագրության միջոցով: </div>
+  <div class="layn_text7">Ինտերիերը, հեռուստատեսությունների տաղավարները, կինոթատրոնները, խանութները, համերգային բեմերը ձևավորելու համար օգտագործվում է հենց այս տեսակի տպագրություն տարբեր կոշտ մակերևույթների վրա: Անհրաժեշտության դեպքում մենք իրականացնում ենք ոչ միայն տպագրություն և տեղադրում, այլև դիզայն: </div>
+
+  <div id="patvirel_icon_block" title="tit1">Պատվիրել</div>
+   <div id="layna_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1"> 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+        
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Տպագրության Տեսակները"> Տպագրության Տեսակները</option>
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ՊԼԱՍՏԻԿ ՔԱՐՏԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main4">
+  <img class="img_main" src="./line_print/line_img3.jpg" >
+  <h1 class="vernagir">ՊԼԱՍՏԻԿ ՔԱՐՏԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="layn_plastic"> <span >Պլաստիկ քարտերի տպագրությունը հնարավորություն է տալիս ստեղծել պլաստիկ այցեքարտեր, զեղչի քարտեր, կուտակային քարտեր, նվեր-քարտեր, ինչպես նաև պլաստիկ մենյուներ, որոնց պատրաստման համար հնարավոր է նաև կիրառել Printing.am-իէքսկլյուզիվ, ունիկալ և բազմազան զսպանակները:</span></div>
+  <div class="layn_mijazgayin">Միջազգային ստանդարտներին համապատասխանող բարձրորակ սարքավորումները հնարավոր են դարձնում պլաստիկ քարտերի շտապ և որակյալ պատրաստում:  </div>
+
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="plastik_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                     ԳՈՎԱԶԴԱՅԻՆ ՍՏԵՆԴՆԵՐ
+//------------------------------------------------------ -->
+<section class="main5">
+  <img class="img_main" src="./line_print/line_img1.Png" >
+  <h1 class="vernagir">ԳՈՎԱԶԴԱՅԻՆ ՍՏԵՆԴՆԵՐ</h1>
+  <div class="govazd_global"> <span >PRINTING IT-ն առաջարկում է գովազդային ստենդների՝ X բանների, Roll Up-ի, Press Wall-ի, պրոմո ստենդի (գովազդային սեղանի), դրոշակների վարձույթ և վաճառք, ինչպես նաև անհատական պատվերով յուրահատուկ ստենդների պատրաստում:</span></div>
+  <div class="govazd_global_blue"><mark style="background-color: aqua;">X բաններ, չափսը՝ 80x180, 60x160 </mark></div>
+  <div class="govazd_baner"><span >X բաններները պատրաստված են բարձրորակ պլաստիկից և ալյումինից։ Բանների հետ միասին տրվում է նաև նրա համար հատուկ պայուսակ, որը ապահովում է բանների հարմարավետ տեղափոխումը։ 
+    Կոնստրուկցիան նախատեսված է փակ տարածքներում օգտագործելու համար։ Նման կոնստրուկցիայի գլխավոր առավելությունն իր ցածր գինն է։ Իդեալական տարբերակ է ցուցահանդեսների, արշավների, հավաքույթների, ինչպես նաև շնորհանդեսների ժամանակ օգտագործելու համար։</span></div>
+  <div class="govazd_global_blue1"><mark style="background-color: aqua;">Roll Up, չափսը՝ 80x200, 85x200, 90x200, 100x200
+  </mark></div>
+  <div class="govazd_rol"><span >Roll up բանները այնպիսի կոնստրուկցիա է, որը ձգվելով ամրանում է ստենդի ալյումինե հիմքին։ Բանների վրա կարելի է իրականացնել գործունեության ոլորտին համապատասխան ցանկացած տպագրություն։ Շնորհիվ պարզ, բայց միևնույն ժամանակ կայուն կոնստրուկցիայի, roll up բաններները չափազանց հարմարավետ են օգտագործման և տեղափոխման համար։
+  Իդեալական տարբերակ են գովազդային արշավների, ցուցահանդեսների, զանազան ապրանքներ և ծառայություններ ներկայացնելու, շնորհանդեսների ժամանակ օգտագործելու համար։ Կոնստրուկցիան նախատեսված է ինչպես փակ տարածքներում օգտագործելու համար, այնպես էլ՝ դրսում։
+  <br>Roll up-ների գլխավոր առավելություններն են՝ թեթև քաշը, տարածության խնայումը և օգտագործման հարմարավետությունը։ Բանների հետ միասին տրվում է նաև նրա համար հատուկ պայուսակ, որը ապահովում է բանների հարմարավետ տեղափոխումը։<br></span></div>
+  <div class="govazd_global_blue2"><mark style="background-color: aqua;">Promo stand, չափսը՝ 85x185
+  </mark></div>
+  
+  <div class="govazd_promo"><span >Պրոմո ստենդի չափսը հնարավորությունէ ընձեռնում այն տեղադրել հանրախանութներում, զբոսայգիներում, դրսում և այդպես ներկայանալ սպառողներին: Սեղանները որպես կանոն պատրաստվում են բարձրորակ ՊՎՔ-ից, որը հնարավոր է դարձնում հեշտությամբ տեղափոխել այն մի վայրից մյուսը:</span></div>
+  <div id="patvirel_icon_block" class="patv_div" title="tit1" >Պատվիրել</div>
+   <div id="govazd_knopka_hetadarc">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1"> 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>  
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select>       
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                     UV ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main6">
+  <img class="img_main" src="./line_print/uv.jpg" >
+  <h1 class="vernagir">UV ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="uv_global"> <span >UV պրինտերի ունիկալ տեխնոլոգիաները թույլ են տալիս իրականացնել տպագրություն ցանկացած հարթ մակերևույթի վրա:</span></div>
+  <div class="uv_global_it">PRINTING IT-ի UV սարքավորումով իրակացրած ֆոտոտպագրությունն այնքան պարզ է և բնական գույներով հագեցած, որ կտավի վրա իրականացված տպագրությունից տպավորություն է ստեղծվում, թե այն յուղաներկով է նկարված: </div>
+  <div class="uv_global_it1">PRINTING IT-ի UV սարքավորումով իրակացրած ֆոտոտպագրությունն այնքան պարզ է և բնական գույներով հագեցած, որ կտավի վրա իրականացված տպագրությունից տպավորություն է ստեղծվում, թե այն յուղաներկով է նկարված: </div>
+
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="uv_knopka_hetadarc">Նախորդ</div>         
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun"> 
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ԱՐՏԱՔԻՆ ԳՈՎԱԶԴ
+//------------------------------------------------------ -->
+<section class="main7">
+  <img class="img_main" src="./line_print/laynaformat.jpg" >
+  <h1 class="vernagir">ԱՐՏԱՔԻՆ ԳՈՎԱԶԴ</h1>
+  <div class="artaqin_govazd"> <span >Մենք երաշխավորում ենք մեր իրականացրած արտաքին գովազդի որակը: </span></div>
+  <div class="artaqin_govazd_patrastum">Պատրաստում են տարբեր ձևի և չափսի ստենդներ տարբեր նյութերից՝ կախված այն վայրից, թե որտեղ է տեղադրվելու այն, հիմնականում՝ մետաղից, փայտից, ՊՎՔ-ից, ինչպես նաև մի քանի նյութերի համադրությունից։ </div>
+  <div class="artaqin_govazd_irakanacum">Իրականացնում ենք տրանսպորտային փոխադրամիջոցների բրենդավորում՝ մեքենաների ձևավորում, որը գովազդի լավագույն տարբերակներից է, իսկ անհատ վարորդի համար՝ տարբերվելու կատարյալ միջոց:</div>
+  <div class="artaqin_govazd_patrastum1">Պատրաստում ենք տարբեր ձևի և չափսի գովազդային ցուցանակներ, լուսավորվող վահանակներ՝ լայթբոքսեր, մեծ չափսի պաստառներ շինությունների պատերի արտաքին հատվածին և, իհարկե, ծավալային տառեր՝ եռաչափ կոնստրուկցիաներ, որոնք մաքսիմալ տպավորիչ ազդեցություն են թողնում անցորդների վրա և համարվում են արտաքին գովազդի ամենաէֆեկտիվ տարբերակը: Ծավալային տառերը բավականին հարգի են, միևնույն ժամանակ՝ համեմատաբար ոչ թանկ գովազդ:</div>
+  <div class="artaqin_govazd_cucaberel">Ցուցաբերում ենք անհատական մոտեցում, առաջարկում ենք արտաքին գովազդի ամբողջական պաստրատում՝ գաղափարից, դիզայնից մինչև իրականացում և տեղադրում:</div>
+  <div class="artaqin_govazd_masnagetner">Մեր մասնագետները կատարում են ճշգրիտ չափագրում և տեղադրում՝ մոնտաժային աշխատանքներ:</div>
+  <div class="artaqin_govazd_cankacac_mijavayr">Ցանկացած միջավայրի պայմաններին համապատասխան ընտրվում է հատուկ նյութ, ինչն ապահովում է գովազդի երկարակեցությունը:</div>
+  <div class="artaqin_govazd_global_it">PRINTING IT-ի թիմը չի խուսափում նոր, բարդ, ունիկալ պատվերներից, այլ մոտենում է առանձնահատուկ սիրով և հավուր պատշաճի իրականացնում արտաքին գովազդի հետ կապված ցանկացած բարդության աշխատանք:</div>
+ 
+  <div id="patvirel_icon_block" class="artaqin_govazd_patvirel" title="tit1" >Պատվիրել</div>
+   <div id="artaqin_govazd_knopka_hetadarc">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1"> 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">       
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>  
+  </select> 
+  <select class="miakoxmani_tpagrutyun">       
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ԴԻԶԱՅՆ
+//------------------------------------------------------ -->
+<section class="main8">
+  <img class="img_main" src="./line_print/veb.jpg" >
+  <h1 class="vernagir">ԴԻԶԱՅՆ</h1>
+  <div class="dizayn_global"> <span >Մեր ստեղծագործ դիզայներները սիրում են իրենց գործը, և դա է պատճառը, որ մեկ անգամ վստահելով իրենց փորձառությանն ու երևակայությանը, սովորաբար դառնում են մշտական հաճախորդ:</span></div>
+  <div class="dizayn_global_it">PRINTING IT-ում հնարավոր է պատվիրել դիզայներական աշխատանք՝ սկսած այցեքարտերի, փաթեթավորման ձևի, պիտակների, տպագրական տարբեր նյութերի ձևավորումից մինչև արտաքին գովազդի դիզայնի մշակում, ինտերիերի դիզայն և վեբ դիզայն:   </div>
+
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="dizayn_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ԲՐԵՆԴԻՆԳ
+//------------------------------------------------------ -->
+<section class="main9">
+  <img class="img_main" src="./line_print/brent.jpg" >
+  <h1 class="vernagir">ԲՐԵՆԴԻՆԳ</h1>
+  <div class="global_brend"> <span >Ճիշտ բրենդինգից է սկսվում ապրանքանիշի հաջողությունը:</span></div>
+  <div class="global_apranqanish">Մենք կարևորում ենք յուրաքանչյուր մանրուք, փորձում ենք ոչ թե բավարարել հաճախորդի սպասելիքները, այլ գերազանցել դրանք:</div>
+  <div class="global_brending">
+    Բրենդինգի մշակման հիմնական փուլերն են՝ նեյմինգ՝ անվան մշակում), լոգո՝ տարբերանշանի մշակում, ֆիրմային ոճի ստեղծում, փաթեթավորման դիզայն</div>
+
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="brend_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ՄԵՏԱՔՍՅԱ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main10">
+  <img class="img_main" src="./line_print/line_img14.jpg" >
+  <h1 class="vernagir">ՄԵՏԱՔՍՅԱ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="global_metaqs"> <span >Մետաքսյա տպագրությունը կիրառվում է  հատկապես ֆիրմային ոճ ստեղծելու և պահպանելու համար, քանի որ այս տեսակով կատարվում է տպագրություն շապիկների, գլխարկների, շարֆերի, պոլիէթիլենային տոպրակների, կտորից տոպրակների կամ պայուսակների, բարձերի, բաժակների, հիշողության կրիչների և գրիչների վրա:</span></div>
+  <div class="global_metaqs_tpagrutyun">PRINTING IT-ում ընդունվում են ինչպես կորպորատիվ, այնպես էլ անհատական պատվերներ, որոնք իրականացվում են հենց տեղում: </div>
+  
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="metaqs_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select>  
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ՖՈՏՈ
+//------------------------------------------------------ -->
+<section class="main11">
+  <img class="img_main" src="./line_print/photo.jpg" >
+  <h1 class="vernagir">ՖՈՏՈ</h1>
+  <div class="global_photo"> <span >Մենք առաջարկում ենք ոչ միայն տպագրություն տեղում, այլև պրոդուկտ ֆոտո:</span></div>
+  <div class="global_photo_prof">Պրոֆեսիոնալ ֆոտո ծառայություն ինչպես ստուդիայում, այնպես էլ՝ ստուդիայից դուրս՝ կախված տվյալ պրոդուկտից և նպատակից </div>
+  
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="photo_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                   ԿՐԾՔԱՆՇԱՆՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main12">
+  <img class="img_main" src="./line_print/krcqanshan.jpg" >
+  <h1 class="vernagir">ԿՐԾՔԱՆՇԱՆՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="global_krcqanshan"> <span >PRINTING IT-ն իրականացնում է կրծքանշանների շտապ տպագրություն անմիջապես տեղում:</span></div>
+  <div class="global_krcqanshan_chaper">Կրծքանշանների չափսերն են՝ 58մմ, 38մմ, 25մմ, պատվերի մինիմալ քանակը՝ 50:  </div>
+  
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="krcqanshani_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="0" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>  
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                   ՀՈՒՇԱՆՎԵՐՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ
+//------------------------------------------------------ -->
+<section class="main13">
+  <img class="img_main" src="./line_print/hushanver.jpg" >
+  <h1 class="vernagir">ՀՈՒՇԱՆՎԵՐՆԵՐԻ ՏՊԱԳՐՈՒԹՅՈՒՆ</h1>
+  <div class="global_it_hushanver"> <span >PRINTING IT-ն առաջարկում է անհատական և կորպորատիվ հուշանվերների տպագրություն:</span></div>
+  <div class="global_it_hushanver_irakanacum">Իրականացնում ենք անհատական դիզայներական աշխատանքներ յուրաքանչյուր պատվիրատուի համար: Հուշանվերների տպագրությունն իրականացվում է ցանկացած քանակի դեպքում՝ սկսած 1 հատից: Մատուցեք Ձեր գործընկներին կամ սիրելիներին ինքնատիպ նվերներ: </div>
+  <div class="global_it_hushanver_gorcum"> <span >Գործում են կորպորատիվ հատուկ առաջարկներ կազմակերպությունների համար:</span></div>
+  <div class="global_it_hushanver_katarum"> <span >Կատարվում է տպագրություն փազլի, բաժակի, ափսեի, շղթայի, գրիչի և այլ մակերևույթների վրա, որոնք կառաջարկվեն Ձեր կողմից</span></div>
+ 
+  <div id="patvirel_icon_block" class="hush_inp" title="tit1" >Պատվիրել</div>
+   <div id="hushanveri_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option> 
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                   ԼԱԶԵՐԱՅԻՆ ՀԱՏՈՒՄ
+//------------------------------------------------------ -->
+<section class="main14">
+  <img class="img_main" src="./line_print/lazer.jpg" >
+  <h1 class="vernagir">ԼԱԶԵՐԱՅԻՆ ՀԱՏՈՒՄ</h1>
+  <div class="global_lazerayin"> <span >Լազերային հատումով կարելի է ամենատարբեր մակերեսների վրա ստանալ գրություններ, պատկերներ, ինչպես նաև պատրաստել հուշանվերների և ինտերիերի պարագաներ:</span></div>
+  <div class="global_lazerayin_hatum">Հատումը հնարավոր է իրականացնել ինչպես փայտի, այնպես էլ կաշվի, ապակու, օրգանական ապակու վրա:</div>
+  <div class="global_lazerayin_hatum_lazerayin">Լազերային հատումով PRINTING IT-ումկարելի է պատվիրել տարբեր պարագաներ՝ մենյուներ, խաղալիքներ, տուփեր, զարդատուփեր, շրջանակներ, այլ պատկերներ:</div>
+  
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="lazeri_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">  
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>
+  </select> 
+  <select class="miakoxmani_tpagrutyun"> 
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+<!-- //------------------------------------------------------
+//                    ՄԵՔԵՆԱՆԵՐԻ ՁԵՒԱՎՈՐՈՒՄ
+//------------------------------------------------------ -->
+<section class="main15">
+  <img class="img_main" src="./line_print/meqena.jpg" >
+  <h1 class="vernagir">ՄԵՔԵՆԱՆԵՐԻ ՁԵՒԱՎՈՐՈՒՄ</h1>
+  <div class="global_meqena"> <span >Իրականացնում ենք տրանսպորտային փոխադրամիջոցների բրենդավորում՝ մեքենաների ձևավորում, որը գովազդի լավագույն տարբերակներից է, իսկ անհատ վարորդների համար՝ տարբերվելու կատարյալ միջոց:</span></div>
+  <div class="global_meqena_barcrorak">Բարձրորակ ջրակայուն ինքնակպչունները դիմանում են եղանակային ցանկացած փոփոխությունների, անհրաժեշտության դեպքում կատարում ենք նաև յուրահատուկ դիզայնի մշակում և բարդ կոնստրուկցիաներով ձևավորում: </div>
+
+  <div id="patvirel_icon_block" title="tit1" >Պատվիրել</div>
+   <div id="meqenaneri_hetadarc_knopka">Նախորդ</div> 
+  <div id="patvirel_none" class="patvirel_div1" > 
+    <i id="patvirel_block" class="fas fa-times"></i>
+    <img class="logo_img" src="./line_print/mini-logo.png">
+  <div class="dada">
+    <label for="myfile" class="chous">Կցել տպագրվող ֆայլեր</label>
+    <input type="file" class="my" id="myfile" name="myfile" multiple="multiple"/>
+  </div>
+    <input class="tipe_number"  type="number" placeholder="Քանակ" min="1" max="100"> 
+  <select class="guyn_tpagrutyun">
+    <option value="Տպագրության Տեսակները"> Տպագրության Տեսակները</option>
+    <option value="Գունավոր">Գունավոր </option>
+    <option value="Անգույն">Անգույն</option>
+  </select> 
+  <select class="miakoxmani_tpagrutyun">
+    <option value="Տպագրության Տեսակները"> Տպագրության Տեսակները</option>
+    <option value="Միակողմանի">Միակողմանի</option>
+    <option value="Երկողմանի">Երկողմանի </option>
+  </select> 
+  <select class="txti_tpagrutyun">
+    <option value="Թուղթ"> Թուղթ</option>
+    <option value="A0 (21.7 x 42 սմ)"> A0 (21.7 x 42 սմ)</option>
+    <option value="A1 (22.7 x 22 սմ)"> A1 (22.7 x 22 սմ)</option>
+    <option value="A2 (29.7 x 42 սմ)"> A2 (29.7 x 42 սմ)</option>
+    <option value="Միջին (13 x 18 սմ)">Միջին (13 x 18 սմ)</option>
+    <option value="Անձնագրի նկար (3 x 4 սմ)">Անձնագրի նկար (3 x 4 սմ) </option>
+    <option value="A4 (21 x 29.7 սմ)">A4 (21 x 29.7 սմ) </option>
+    <option value="A3 (29.7 x 42 սմ)">A3 (29.7 x 42 սմ) </option>
+    <option value="A5 (29.7 x 42 սմ)">A5 (29.7 x 42 սմ) </option>
+  </select> 
+    <input class="patvirel_inp1" type="button" value="Պատվիրել"> 
+  </div>
+</section>
+  <!-- //------------------------------------------------------
+//                     tpagrutyan_carayutyunner
+//------------------------------------------------------ -->
+<section  class="tpagrutyan_carayutyunner">
+  <div class="tpagrutyan_carayutyunner_tesak1">
+    <div class="vip1">
+       <a class="tpagrutyun_href">ԹՎԱՅԻՆ <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="tvain_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img1.png" class="print1">
+    </div> 
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ՕՖՍԵԹ  <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="ofset_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img13.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ԼԱՅՆԱՖՈՐՄԱՏ  <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="layna_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/laynaformat.jpg" class="print1">
+    </div>  
+    <div  class="vip1">
+       <a class="tpagrutyun_href"   href="">ՊԼԱՍՏԻԿ ՔԱՐՏԵՐԻ <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="plastic_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/print5.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ԳՈՎԱԶԴԱՅԻՆ  <br>ՍՏԵՆԴՆԵՐ<br></a>
+       <a id="govazd_icon" class="tpagrutyun_icon" ><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/laynaformat.jpg" class="print1">
+    </div>  
+    <div class="vip2">
+       <a class="tpagrutyun_href" href="">ՀՈՒՇԱՆՎԵՐՆԵՐԻ  <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="hush1" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img5.jpg" class="print1">
+    </div>  
+    <div  class="vip2">
+       <a class="tpagrutyun_href"  href="">ԼԱԶԵՐԱՅԻՆ  <br>ՀԱՏՈՒՄ<br></a>
+       <a id="lazer1" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/lazer.jpg" class="print1">
+    </div>    
+  </div>                 
+  <div class="tpagrutyan_carayutyunner_tesak2">
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">UV ՏՊԱԳՐՈՒԹՅՈՒՆ</a>
+       <a id="uv_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/uv.jpg" class="print1">
+    </div> 
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ԱՐՏԱՔԻՆ ԳՈՎԱԶԴ</a>
+       <a id="artaqin_icon" class="tpagrutyun_icon" ><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img2.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ԴԻԶԱՅՆ</a>
+       <a id="dizayn_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/veb.jpeg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ԲՐԵՆԴԻՆԳ</a>
+       <a id="brend_icon" class="tpagrutyun_icon" ><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/print5.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ՄԵՏԱՔՍՅԱ <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="metaqs_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img14.jpg" class="print1">
+    </div>  
+    <div class="vip2">
+       <a class="tpagrutyun_href" href="">ՖՈՏՈ</a>
+       <a id="photo1" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/photo.jpg" class="print1">
+    </div> 
+    <div class="vip2">
+       <a class="tpagrutyun_href" href="">ԿՐԾՔԱՆՇԱՆՆԵՐԻ <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="krcqanshan1" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img13.jpg" class="print1">
+    </div>     
+  </div> 
+  <div class="tpagrutyan_carayutyunner_tesak3">
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ՖՈՏՈ</a>
+       <a id="photo_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/photo.jpg" class="print1">
+    </div> 
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ԿՐԾՔԱՆՇԱՆՆԵՐԻ <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="krcqanshan_icon" class="tpagrutyun_icon" ><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img13.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href" href="">ՀՈՒՇԱՆՎԵՐՆԵՐԻ  <br>ՏՊԱԳՐՈՒԹՅՈՒՆ<br></a>
+       <a id="hush_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/line_img5.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ԼԱԶԵՐԱՅԻՆ  <br>ՀԱՏՈՒՄ<br></a>
+       <a id="lazer_icon" class="tpagrutyun_icon"><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/lazer.jpg" class="print1">
+    </div>  
+    <div class="vip1">
+       <a class="tpagrutyun_href"  href="">ՄԵՔԵՆԱՆԵՐԻ <br>ՁԵՒԱՎՈՐՈՒՄ<br></a>
+       <a id="avto_icon" class="tpagrutyun_icon" ><i class="fas fa-angle-right"></i></a>
+       <img src="./line_print/meqena.jpg" class="print1">
+    </div>  
+   
+  </div>   
+  <div class="tpagrutyan_carayutyunner_tesak4">
+    <span>Նախորդ</span>
+  </div> 
+</section> 
+      
+  <!-- //------------------------------------------------------
+//                     question_answer_container_laynakantuxt
+//------------------------------------------------------ -->                 
+<section class="question_answer_container_laynakantuxt">
+  <div class="laynakan_tuxt1">
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/line_img7.jpg" class="tesak_tpagrutyan">
+      <a id="div_klor"class="klor_slaq"><i class="fas fa-angle-right"></i></a>
+      <a class="tpagrakan_tesaki_anvanum">Տպագրություն</a>
+    </div>
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/line_img5.jpg" class="tesak_tpagrutyan">
+      <a class="tpagrakan_tesaki_anvanum" >ԳՈՎԱԶԴԱՅԻՆ <br>ՍՏԵՆԴՆԵՐ<br></a>
+      <a class="klor_slaq" ><i class="fas fa-angle-right"></i></a>
+    </div> 
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/line_img6.jpg" class="tesak_tpagrutyan">
+      <a class="klor_slaq" ><i class="fas fa-angle-right"></i></a>
+      <a class="tpagrakan_tesaki_anvanum">ԴԻԶԱՅՆ</a>
+    </div> 
+  </div>
+    
+  <div class="laynakan_tuxt2">
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/laynaformat.jpg" class="tesak_tpagrutyan">
+      <a class="klor_slaq"><i class="fas fa-angle-right"></i></a>
+      <a class="tpagrakan_tesaki_anvanum">ԱՐՏԱՔԻՆ <br>ԳՈՎԱԶԴ<br></a>
+    </div>
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/line_img8.jpg" class="tesak_tpagrutyan">
+      <a id="klor1" class="klor_slaq"><i class="fas fa-angle-right"></i></a>
+      <a class="tpagrakan_tesaki_anvanum">ԲՐԵՆԴԻՆԳ</a>
+    </div>
+    <div class="tpagrakan_tesaki_qanak">
+      <img src="./line_print/photo.jpg" class="tesak_tpagrutyan">
+      <a id="klor1" class="klor_slaq" ><i class="fas fa-angle-right" ></i></a>
+      <a class="tpagrakan_tesaki_anvanum">ՖՈՏՈ</a>
+    </div>  
+  </div>   
+  <div class="laynakan_tuxt3">
+    <span>Նախորդ</span>
+  </div>      
+</section> 
+                    
+                        
+<section  class="main_section">
+  <div class="question_answer_container first_container" id="box0">
+    <div class="question_container">Լայնաֆորմատ Տպագրական  Ծառայություններ</div>
+    <div class="description_container">“PRINTING It”-ը  մատուցում  է լայնաֆորմատ տպագրության  ամբողջական ծառայություններ` տպագրություն  վինիլի, թղթի, կտավի, ինքնակպչուն  նյութերի, մագնիսի, ՊՎՔ-ի վրա և ինտերիերային տպագրություն: Printing տպարանը զբաղվում է նաև տրանսպորտային միջոցների բրենդավորմանբ, Roll-up և X-banner-ների վաճառքով: Ի նկատի ունենալով գովազդի շուկայում մեծ մրցակցությունը  “Printing” տպարանը  ներկայանում  է ճկուն և մատչելի գնային առաջարկներով:</div>
+    <div class="new_container">
+      Մենք օգտագործում ենք նոր սերդնի սարքավորումներ և տեխնոլոգիաներ, ինչի շնորհիվ պատկերը և տեքստը մաքսիմալ պարզ է, բարձր կետայնությամբ, տպագրությունը ոչ մի դեպքում չի գունաթափվում արևի ճառագայթներից կամ անձրևից, դիմանում է եղանակային տարբեր փոփոխություններին:
+    </div>
+    <div class="answer_container">Պատվիրել</div>  
+  </div>
+    <!-- ----------------------------------------------------------- -->
+  <div class="question_answer_container others" id="box1">
+    <div class="question_container">Դիմել որպես՝</div>
+    <div class="anhat_div">
+      <img class="anhat_img" src="./1x/1x/Ресурс 1.png" width="45%" height="45%"> 
+      <span class="anhat_text">Անհատ</span>
+    </div>
+    <div class="kazmakerputyun_div">
+      <img class="anhat_img1" src="./1x/1x/Ресурс 2.png" width="40%" height="40%"> 
+      <span class="anhat_text1">Կազմակերպություն</span>
+    </div>
+    <div id="hajord_knopken" class="answer_container" style="margin-top:50%;margin-left:56%;">Հաջորդը</div>
+    <div class="answer_containe1" style="margin-left: 14%;">Նախորդ</div>
+  </div>
+
+<!-- ------------------------------------------------------------------------------------------- -->
+                            <!-- Images -->
+  <div id="dvd">
+    <img src="./1x/Ресурс 18.png" alt="votnak" class="votnak">
+    <img src="./1x/Ресурс 3.png" alt="kubik" class="phone_img">
+    <img src="./1x/Ресурс 9.png" alt="kubik2" class="kubik_img">
+    <img src="./1x/Ресурс 8.png" alt="kubik1" class="kubik_img1">
+    <img src="./1x/Ресурс 17.png" alt="kubik3" class="printpuchur-img">
+    <img src="./1x/Ресурс 9.png" alt="kubik3" class="kubik_img2">
+    <img src="./1x/Ресурс 17.png" alt="kubik3" class="printpuchur_img">
+    <img src="./1x/Ресурс 1.png" alt="axchik" class="girl_img">
+    <img src="./1x/Ресурс 11.png" alt="truba" class="truba_karmir">
+    <img src="./1x/Ресурс 12.png" alt="truba1" class="truba_rozvi">
+    <img src="./1x/Ресурс 4.png" alt="marduk" class="marduk">
+    <img src="./1x/Ресурс 13.png" alt="dexin" class="trubadexin">
+    <img src="./1x/Ресурс 14.png" alt="karmir" class="trubakarmir">
+    <img src="./1x/Ресурс 6.png" alt="printer" class="printer">
+    <img src="./1x/Ресурс 15.png" alt="printertext" class="printertext">
+    <img src="./1x/Ресурс 16.png" alt="printertext" class="printer_text">
+    <img src="./1x/Ресурс 2.png" alt="axchik" class="axchik">
+  </div>        
+</section>
+
+<!-- //------------------------------------------------------
+//                      FOOTER
+//------------------------------------------------------ -->
+<footer>
+    <section class="social_media_section">
+        <img src="Images/mini-logo.png" alt="Logo" width="20%">
+        <article class="about_article">
+            ՍՊԸ-ն հիմնադրվել է 2020թ-ի հոկտեմբեր 15-ին Հ. Սարգսյանի կողմից: Մենք առաջարկում ենք ծրագրային տարատեսակ լուծումներ, որոնց նպատակն է մեծացնել Ձեր բիզնեսի շահութաբերությունը և նպաստել աճն: Մեր ստեղծարար թիմը համատեղ ուժերով տալիս է նորարարական լուծումներ, որոնք նպաստում են Ձեր բիզնեսի թիրախային լսարանի ներգրավմանը:
+        </article>
+        <div class="social_media_container">
+            <nav class="social_link_container">
+                <a href="" target="_black"><img src="Images/facebook.png" alt="Facebook"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="" target="_black"><img src="Images/twitter.png" alt="Twitter"></a>
+            </nav>
+            <nav class="social_link_container">
+                <a href="" target="_black"><img src="Images/instagram-sketched.png" alt="Instagram"></a>
+            </nav>
+            <nav class="social_link_container" >
+                <a href="" target="_black"><img src="Images/youtube.png" alt="Youtube"></a>
+            </nav>
+        </div>
+    </section>
+    <section class="whole_navigaion_section">
+        <span class="navigation_columns">
+            <div class="navigation_through_site_heading">Դասընթացներ</div>
+            <nav><a href="">Վեբ Ծրագրավորում</a></nav>
+            <nav><a href="">Ծրագրավորում</a></nav>
+            <nav><a href="">Մուլտիմեդիա</a></nav>
+            <nav><a href="">Նախագծեր</a></nav>
+            <nav><a href="">Անվճար դասընթացներ</a></nav>
+            <nav><a href="">Այլ դասընթացներ</a></nav>
+            <nav><a href="">Անվճար Դպրոց 1-4 դասարան</a></nav>
+            <nav><a href="">Անվճար Դպրոց 5-9 դասարան</a></nav>
+        </span>
+        <span class="navigation_columns" style="height: 35vw;">
+            <div class="navigation_through_site_heading">Կայքի Քարտեզ</div>
+            <nav><a href="">Դասընթացներ</a></nav>
+            <nav><a href="">Մեր Մասին</a></nav>
+            <nav><a href="">Վեբ Կայքերի Պատրաստում</a></nav>
+            <nav><a href="">Հեռախոսային և Դեսքթոփ հավելվածներ</a></nav>
+        </span>
+        <span class="navigation_columns" style="width: 35%;">
+            <div class="navigation_through_site_heading">Հետադարձ Կապ</div>
+            <nav><a href="">ք. Երևան  36/3</a></nav>
+            <nav><a href="">ք. Աբովյան 46/3 տուն</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="tel:+374 98 398 338">+374 98 398 338</a></nav>
+            <nav><a href="">hovosarg@mail.ru</a></nav>
+            <nav><a href="">sarghovo@gmail.com</a></nav>
+        </span>
+    </section>
+    <div class="weird_item"></div>
+    <div class="footer">
+        <hr width="92%" size="1px"/>
+    </div>
+</footer>
+
+<script src="web_development_page.js"></script>
+</body>
+</html>
